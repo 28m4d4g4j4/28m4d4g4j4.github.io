@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('m4.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f8f8f8;
+    font-family: monospace;
+}
+
+#terminal {
+    width: 80%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    overflow-y: auto;
+}
+
+#output {
+    padding: 20px;
+    height: 70vh; /* Set height to allow enough space for content */
+    overflow-y: auto; /* Allow vertical scrolling when necessary */
+}
+
+#input-line {
+    display: flex;
+}
+
+#prompt {
+    margin-right: 2px;
+    color: rgb(156, 151, 0); /* Prompt color changed to red */
+}
+.prompt-text {
+    color: red; /* Set the prompt text color to red */
+}
+
+
+#input {
+    border: none;
+    background: none;
+    color: #ff0000;
+    flex: 1;
+    outline: none;
+}
+
+.banner {
+    color: red; /* Banner color changed to red */
+}
+.command {
+    color: cyan; /* Customize command color */
+}
+/* Make the output container flexible */
+.flex-container {
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    height: 100%; /* Use full height */
+}   
